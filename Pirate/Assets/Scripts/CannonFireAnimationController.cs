@@ -5,25 +5,30 @@ using UnityEngine;
 
 public class CannonFireAnimationController : MonoBehaviour
 {
-    public int animationDuration = 1;
     private Animator animator;
+    private bool isAnimationAvalible = true;
+    [SerializeField] GameObject smoke;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
     }
-
-    public void Update()
+    public void Fire()
     {
-        StartCoroutine("fire");   
+            if(isAnimationAvalible == true)
+        {
+            StartCoroutine(fire());
+        }
     }
-
-    IEnumerable fire()
+    IEnumerator fire()
     {
         animator.SetBool("isCannonFire", true);
-        yield return new WaitForSeconds(animationDuration);
+        isAnimationAvalible = false;
+        smoke.SetActive(true);        
+        yield return new WaitForSeconds(4f);
         animator.SetBool("isCannonFire", false);
+        isAnimationAvalible = true;
+        smoke.SetActive(false);
     }
 }
-    
-}
+
