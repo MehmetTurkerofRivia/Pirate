@@ -5,4 +5,5 @@ using UnityEngine;
 public class Pirate : MonoBehaviour
 {
     public static int PirateHitChance = 30;
+    public static int PirateRepairAbility = 30;
 }

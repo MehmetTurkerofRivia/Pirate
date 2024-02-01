@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CanWeFire : MonoBehaviour
 {
-    public bool isCrewSelected = false;
+    public static bool isCrewSelected = false;
     public bool isCannonSelected = false;
     [SerializeField] GameObject FireButton;
-    private int hitChance;
+    public static int hitChance;
     public bool isHit = false;
     public int Dice;
     [SerializeField] GameObject Main;
@@ -25,6 +25,7 @@ public class CanWeFire : MonoBehaviour
         {
             FireButton.SetActive(false);
         }
+        Debug.Log(hitChance);
     }
 
     public void CrewActivateButton()
@@ -61,7 +62,7 @@ public class CanWeFire : MonoBehaviour
 
     public void HitStage()
     {
-        hitChance = Pirate.PirateHitChance + Cannon1.CannonHitChance;
+        hitChance = Pirate.PirateHitChance + Cannon1.CannonHitChance + Observe.ExtraHitChance;
         Dice = Random.Range(1, 100);
         if (hitChance > Dice)
         {
