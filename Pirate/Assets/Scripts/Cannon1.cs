@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cannon1 : MonoBehaviour
 {
-    public int CannonDamage = 10;
-    public int CannonHitChance = 45;
-    public bool Isload = true;
+    public static int CannonDamage = 10;
+    public static int CannonHitChance = 45;
+    public static bool Isload = true;
 }
