@@ -7,9 +7,10 @@ public class TextManager : MonoBehaviour
 {
     [SerializeField] Text RepairAbility;
     [SerializeField] Text ObservingAbility;
+    [SerializeField] Text CrewnName;
     private void Start()
     {
-        RepairAbility.text = "" + Pirate.PirateRepairAbility;
-        ObservingAbility.text = "" + Pirate.PirateHitChance;
+       // RepairAbility.text = "" + Pirate.PirateRepairAbility;
+       // ObservingAbility.text = "" + Pirate.PirateHitChance;
     }
 }

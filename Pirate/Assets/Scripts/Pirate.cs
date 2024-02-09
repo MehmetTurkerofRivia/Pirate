@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pirate : MonoBehaviour
+[CreateAssetMenu(fileName = "NewCrew", menuName ="NewPirate")]
+public class Pirate : ScriptableObject
 {
-    public static int PirateHitChance = 30;
-    public static int PirateRepairAbility = 30;
+    [SerializeField] string PirateName;
+    public int PirateHitChance;
+    public int PirateRepairAbility;     
 }
