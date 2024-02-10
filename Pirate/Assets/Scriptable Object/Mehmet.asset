@@ -9,6 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887c2e035488c44b84b66c2a41e1473, type: 3}
-  m_Name: NewCrew
+  m_Script: {fileID: 11500000, guid: 3123dc6d6180ad64c91ef13ca7a27224, type: 3}
+  m_Name: Mehmet
   m_EditorClassIdentifier: 
+  PirateName: Mehmet
+  PirateHitChance: 30
+  PirateRepairAbility: 40
+  isPirateAvaliable: 0

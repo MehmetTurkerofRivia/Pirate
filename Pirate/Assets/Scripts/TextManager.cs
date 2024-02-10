@@ -8,9 +8,20 @@ public class TextManager : MonoBehaviour
     [SerializeField] Text RepairAbility;
     [SerializeField] Text ObservingAbility;
     [SerializeField] Text CrewnName;
+    [SerializeField] CreatingnewPirate crewList;
+    private PirateScriptableObject Pirate;
+    private int randomPirate;
     private void Start()
     {
-       // RepairAbility.text = "" + Pirate.PirateRepairAbility;
-       // ObservingAbility.text = "" + Pirate.PirateHitChance;
+        if ((Pirate == null) )
+        {
+            randomPirate = Random.Range(0, crewList.list.Count);
+            Pirate = crewList.list[randomPirate];
+            crewList.list[randomPirate].isPirateAvaliable = false;
+        }                                   
+        
+        RepairAbility.text = "" + Pirate.PirateRepairAbility;
+        ObservingAbility.text = "" + Pirate.PirateHitChance;
+        CrewnName.text = "" + Pirate.PirateName;
     }
 }

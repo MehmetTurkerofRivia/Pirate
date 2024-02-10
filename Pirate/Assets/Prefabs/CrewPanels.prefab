@@ -465,8 +465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3666426901773081005}
-  - component: {fileID: 5573292333838703913}
-  - component: {fileID: 7430538058623679489}
+  - component: {fileID: 3879686931168463815}
   m_Layer: 5
   m_Name: CrewPanels
   m_TagString: Untagged
@@ -500,7 +499,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5573292333838703913
+--- !u!114 &3879686931168463815
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -514,21 +513,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RepairAbility: {fileID: 1493552095946891500}
   ObservingAbility: {fileID: 2612434814834636821}
-  CrewnName: {fileID: 0}
---- !u!114 &7430538058623679489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6934374057082306563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b710d5f2f06d4bb48bf819f09aeb24b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CrewShadowPanel: {fileID: 8813748466499111638}
-  CrewButtonDisable: {fileID: 582275760464651530}
+  CrewnName: {fileID: 4925946066711753655}
+  crewList: {fileID: 11400000, guid: 74e0addd4fce29c4697e8f2854c1df08, type: 2}
 --- !u!1 &7881652387212312006
 GameObject:
   m_ObjectHideFlags: 0

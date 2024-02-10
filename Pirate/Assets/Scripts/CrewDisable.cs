@@ -9,7 +9,7 @@ public class CrewDisable : MonoBehaviour
 
     void Update()
     {
-        if (CrewShadowPanel.activeInHierarchy)
+        if (pirateData != null && crewShadowPanel != null)
         {
             CrewButtonDisable.SetActive(false);
         }
