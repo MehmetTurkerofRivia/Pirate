@@ -7,16 +7,16 @@ public class CrewDisable : MonoBehaviour
     [SerializeField] GameObject CrewShadowPanel;
     [SerializeField] GameObject CrewButtonDisable;
 
-    void Update()
-    {
-        if (pirateData != null && crewShadowPanel != null)
-        {
-            CrewButtonDisable.SetActive(false);
-        }
+    //void Update()
+    //{
+    //    if (pirateData != null && crewShadowPanel != null)
+    //    {
+    //        CrewButtonDisable.SetActive(false);
+    //    }
 
-        else
-        {
-            CrewButtonDisable.SetActive(true);
-        }
-    }
+    //    else
+    //    {
+    //        CrewButtonDisable.SetActive(true);
+    //    }
+    //}
 }

@@ -9,7 +9,7 @@ public class TextManager : MonoBehaviour
     [SerializeField] Text ObservingAbility;
     [SerializeField] Text CrewnName;
     [SerializeField] CreatingnewPirate crewList;
-    private PirateScriptableObject Pirate;
+    public static PirateScriptableObject Pirate;
     private int randomPirate;
     private void Start()
     {
