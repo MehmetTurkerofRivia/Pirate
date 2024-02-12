@@ -17,6 +17,6 @@ public class Observe : MonoBehaviour
 
     public void observe()
     {
-        ExtraHitChance += (pirate.PirateHitChance / 10);
+        ExtraHitChance += (CreatingnewPirate.selectedpirate.PirateHitChance / 10);
     }
 }

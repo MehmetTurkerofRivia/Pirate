@@ -6,11 +6,18 @@ using UnityEngine.UI;
 public class TextShipİnfotmations : MonoBehaviour
 {
     [SerializeField] Text ShipHitChance;
-    [SerializeField] PirateScriptableObject pirate;
-
     private void Update()
     {
-        ShipHitChance.text = "Your Hit Chance : " + (pirate.PirateHitChance + Cannon1.CannonHitChance + Observe.ExtraHitChance);
+        if (CreatingnewPirate.selectedpirate == null)
+        {
+            ShipHitChance.text = "Your Hit Chance : " + (Cannon1.CannonHitChance);
+        }
+        else
+        {
+            ShipHitChance.text = "Your Hit Chance : " + (CreatingnewPirate.selectedpirate.PirateHitChance + Cannon1.CannonHitChance + Observe.ExtraHitChance);
+        }
+        
 
     }
 }
+                            

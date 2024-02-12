@@ -11,13 +11,13 @@ public class TextManager : MonoBehaviour
     [SerializeField] CreatingnewPirate crewList;
     public static PirateScriptableObject Pirate;
     private int randomPirate;
-    private void Start()
+    private void Update()
     {
         if ((Pirate == null) )
         {
             randomPirate = Random.Range(0, crewList.list.Count);
             Pirate = crewList.list[randomPirate];
-            crewList.list[randomPirate].isPirateAvaliable = false;
+            crewList.list.Remove(Pirate);
         }                                   
         
         RepairAbility.text = "" + Pirate.PirateRepairAbility;

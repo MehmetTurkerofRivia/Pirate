@@ -11,7 +11,6 @@ public class FinizalizeHitScene : MonoBehaviour
     {
         Main.SetActive(true);
         Hit.SetActive(false);   
-        PirateScriptableObject.panel.SetActive(false);
         panel2.SetActive(false);
     }
 

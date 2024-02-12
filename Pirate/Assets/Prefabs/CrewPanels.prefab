@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 744.6, y: -190.61}
+  m_AnchoredPosition: {x: 0.59399414, y: -0.102005005}
   m_SizeDelta: {x: 253.2, y: 161.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8250020236763706945
@@ -120,9 +120,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11500000, guid: 4e7d5d35e6377ec4f8099c338779eda9, type: 3}
         m_TargetAssemblyTypeName: CanWeFire, Assembly-CSharp
-        m_MethodName: CrewActivateButton
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -136,6 +136,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SelectedPirate, Assembly-CSharp
+        m_MethodName: SelectedPirateis
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -178,7 +190,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 668, y: -207.57999}
+  m_AnchoredPosition: {x: -76.00598, y: -17.071991}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &743982997782813029
@@ -253,7 +265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 675.31995, y: -245.21999}
+  m_AnchoredPosition: {x: -68.686035, y: -54.71199}
   m_SizeDelta: {x: 374.64, y: 120.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3204254483255540411
@@ -332,7 +344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 751.6499, y: -167.61}
+  m_AnchoredPosition: {x: 7.643921, y: 22.897995}
   m_SizeDelta: {x: 160, y: 144.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4277323171288329964
@@ -411,7 +423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 752.7899, y: -231.41}
+  m_AnchoredPosition: {x: 8.783936, y: -40.902008}
   m_SizeDelta: {x: 160, y: 147.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6268180539828378509
@@ -466,6 +478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3666426901773081005}
   - component: {fileID: 3879686931168463815}
+  - component: {fileID: -3293782343992009298}
   m_Layer: 5
   m_Name: CrewPanels
   m_TagString: Untagged
@@ -482,7 +495,7 @@ RectTransform:
   m_GameObject: {fileID: 6934374057082306563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5619610004407556300}
@@ -515,6 +528,21 @@ MonoBehaviour:
   ObservingAbility: {fileID: 2612434814834636821}
   CrewnName: {fileID: 4925946066711753655}
   crewList: {fileID: 11400000, guid: 74e0addd4fce29c4697e8f2854c1df08, type: 2}
+--- !u!114 &-3293782343992009298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6934374057082306563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786d53742b67441459eb69fa384576b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pirateTemplate: {fileID: 0}
+  pirateshowfield: {fileID: 0}
+  korsanPrefab: {fileID: 6934374057082306563}
 --- !u!1 &7881652387212312006
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 743.99994, y: -190.51}
+  m_AnchoredPosition: {x: -0.006, y: -0.002}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1116625757655275793
@@ -624,7 +652,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 743.1, y: -190.61}
+  m_AnchoredPosition: {x: -0.90600586, y: -0.102005005}
   m_SizeDelta: {x: 156.21, y: 61.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7585694148005637927

@@ -63,7 +63,7 @@ public class CanWeFire : MonoBehaviour
 
     public void HitStage()
     {
-        hitChance =pirate.PirateHitChance + Cannon1.CannonHitChance + Observe.ExtraHitChance;
+        hitChance = CreatingnewPirate.selectedpirate.PirateHitChance + Cannon1.CannonHitChance + Observe.ExtraHitChance;
         Dice = Random.Range(1, 100);
         if (hitChance > Dice)
         {
