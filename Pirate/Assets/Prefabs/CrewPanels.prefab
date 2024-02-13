@@ -495,7 +495,7 @@ RectTransform:
   m_GameObject: {fileID: 6934374057082306563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5619610004407556300}
@@ -509,7 +509,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.026154099, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3879686931168463815
@@ -540,9 +540,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786d53742b67441459eb69fa384576b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pirateTemplate: {fileID: 0}
-  pirateshowfield: {fileID: 0}
+  pirateTemplate: {fileID: 11400000, guid: 8733a3ec4c7a430409231463e8c6f7de, type: 2}
   korsanPrefab: {fileID: 6934374057082306563}
+  Canvas: {fileID: 0}
+  piratelist: {fileID: 11400000, guid: 74e0addd4fce29c4697e8f2854c1df08, type: 2}
 --- !u!1 &7881652387212312006
 GameObject:
   m_ObjectHideFlags: 0
