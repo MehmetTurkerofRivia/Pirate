@@ -6,6 +6,6 @@ using UnityEngine;
 public class Pirate : ScriptableObject
 {
     [SerializeField] string PirateName;
-    public int PirateHitChance;
+    public static int PirateHitChance;
     public int PirateRepairAbility;     
 }

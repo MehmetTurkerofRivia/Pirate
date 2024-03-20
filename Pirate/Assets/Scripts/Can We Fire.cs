@@ -17,7 +17,8 @@ public class CanWeFire : MonoBehaviour
 
     void Update()
     {
-    if ((isCrewSelected == true) && (isCannonSelected == true) && (Cannon1.Isload == true))
+        hitChance = Pirate.PirateHitChance + Cannon1.CannonHitChance + Observe.ExtraHitChance;
+        if ((isCrewSelected == true) && (isCannonSelected == true) && (Cannon1.Isload == true))
         {
             FireButton.SetActive(true);             
         }
@@ -62,7 +63,7 @@ public class CanWeFire : MonoBehaviour
 
     public void HitStage()
     {
-        hitChance = Pirate.PirateHitChance + Cannon1.CannonHitChance + Observe.ExtraHitChance;
+       
         Dice = Random.Range(1, 100);
         if (hitChance > Dice)
         {
