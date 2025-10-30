@@ -5,6 +5,7 @@ using UnityEngine;
 public class Observe : MonoBehaviour
 {
     [SerializeField] GameObject ObserveButton;
+
     public static int ExtraHitChance = 0;
     void Update()
     {
@@ -14,8 +15,5 @@ public class Observe : MonoBehaviour
         }    
     }
 
-    public void observe()
-    {
-        ExtraHitChance += (Pirate.PirateHitChance / 10);
-    }
+
 }
