@@ -25,7 +25,7 @@ public class CanWeFire : MonoBehaviour
         {
             FireButton.SetActive(false);
         }
-        Debug.Log(hitChance);
+        Debug.Log(isCrewSelected);
     }
 
     public void CrewActivateButton()

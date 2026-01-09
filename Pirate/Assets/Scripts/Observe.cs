@@ -8,10 +8,14 @@ public class Observe : MonoBehaviour
     public static int ExtraHitChance = 0;
     void Update()
     {
-        if(CanWeFire.isCrewSelected == true)
+        if (CanWeFire.isCrewSelected == true)
         {
             ObserveButton.SetActive(true);
-        }    
+        }
+        else
+        {
+            ObserveButton.SetActive(false);
+        }
     }
 
     public void observe()

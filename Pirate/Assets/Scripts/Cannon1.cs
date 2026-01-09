@@ -5,6 +5,6 @@ using UnityEngine;
 public class Cannon1 : MonoBehaviour
 {
     public static int CannonDamage = 10;
-    public static int CannonHitChance = 45;
+    public static int CannonHitChance = 25;
     public static bool Isload = true;
 }
